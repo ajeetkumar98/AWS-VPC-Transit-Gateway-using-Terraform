@@ -47,7 +47,7 @@ resource "aws_instance" "shareddatabase_linux" {
   instance_type = "t2.micro"  # Adjust instance type as needed
 
   # Ensure you have a key pair created and named "customer-keypair" in AWS
-  key_name = "webapp_keypair"
+  key_name = "my"
 
   # Securely encode the user data script with base64encode
   user_data = base64encode(<<EOF

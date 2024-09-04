@@ -47,7 +47,7 @@ resource "aws_instance" "backendservices_linux" {
   instance_type = "t2.micro"  # Adjust instance type as needed
 
   # Ensure you have a key pair created and named "customer-keypair" in AWS
-  key_name = "my"
+  key_name = "mykey"
 
   # Securely encode the user data script with base64encode
   user_data = base64encode(<<EOF
